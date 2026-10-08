@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hospital Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Hospital Management System</h1>
+
+
+    <section>
+
+        <h2>Patient Registration / Login</h2>
+
+        <form id="patientForm">
+
+            <label>Patient Name:</label>
+            <input type="text" id="patientName"
+                   placeholder="Enter patient name">
+
+            <label>Contact:</label>
+            <input type="text" id="patientContact"
+                   placeholder="Enter 10 digit contact number"
+                   maxlength="10">
+
+            <label>Email ID:</label>
+            <input type="email" id="patientEmail"
+                   placeholder="Enter email address">
+
+            <button type="submit">
+                Login / Register
+            </button>
+
+        </form>
+
+        <p id="patientMessage"></p>
+
+    </section>
+
+
+   
+
+    <section>
+
+        <h2>Doctor Dashboard</h2>
+
+        <table>
+
+            <tr>
+                <th>Doctor Name</th>
+                <th>Specialization</th>
+                <th>Price Charge</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr>
+                <td>Smita Patil</td>
+                <td>Surgeon</td>
+                <td>₹250</td>
+                <td>9 AM - 2 PM</td>
+            </tr>
+
+            <tr>
+                <td>Vaibhav Sharma</td>
+                <td>Gynaecologist</td>
+                <td>₹300</td>
+                <td>2 PM - 3 PM</td>
+            </tr>
+
+            <tr>
+                <td>Mitali Gupta</td>
+                <td>General Physician</td>
+                <td>₹200</td>
+                <td>2 PM - 5 PM</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+  
+
+    <section>
+
+        <h2>Book Appointment</h2>
+
+        <form id="appointmentForm">
+
+            <label>Patient Name:</label>
+            <input type="text" id="appointmentPatientName"
+                   placeholder="Enter patient name">
+
+            <label>Contact:</label>
+            <input type="text" id="appointmentContact"
+                   placeholder="Enter 10 digit contact number"
+                   maxlength="10">
+
+            <label>Email ID:</label>
+            <input type="email" id="appointmentEmail"
+                   placeholder="Enter email address">
+
+            <label>Doctor:</label>
+
+            <select id="doctor">
+
+                <option value="">Select Doctor</option>
+
+                <option value="Smita Patil">
+                    Smita Patil - Surgeon
+                </option>
+
+                <option value="Vaibhav Sharma">
+                    Vaibhav Sharma - Gynaecologist
+                </option>
+
+                <option value="Mitali Gupta">
+                    Mitali Gupta - General Physician
+                </option>
+
+            </select>
+
+
+            <label>Appointment Date:</label>
+            <input type="date" id="appointmentDate">
+
+
+            <label>Appointment Time:</label>
+            <input type="time" id="appointmentTime">
+
+
+            <button type="submit">
+                Book Appointment
+            </button>
+
+        </form>
+
+        <p id="appointmentMessage"></p>
+
+    </section>
+
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

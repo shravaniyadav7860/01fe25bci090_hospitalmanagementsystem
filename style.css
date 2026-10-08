@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: white;
+}
+
+#patientMessage,
+#appointmentMessage {
+    margin-top: 15px;
+    padding: 10px;
+    font-weight: bold;
+}
